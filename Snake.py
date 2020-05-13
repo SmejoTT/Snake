@@ -2,7 +2,7 @@ import random
 import sys, pygame
 pygame.init()
 # Screen
-icon = pygame.image.load("snake_icon2.png")
+icon = pygame.image.load("assets/snake_icon2.png")
 pygame.display.set_icon(icon)
 size = height, width = 600,600
 screen = pygame.display.set_mode(size)
@@ -199,21 +199,21 @@ class Snake:
         self.grow()
 
 
-snake_head_right = pygame.image.load("snake_head_right.png")
-snake_head_left = pygame.image.load("snake_head_left.png")
-snake_head_up = pygame.image.load("snake_head_up.png")
-snake_head_down = pygame.image.load("snake_head_down.png")
-snake_body = pygame.image.load("snake_body.png")
-snake_body_up = pygame.image.load("snake_body_up.png")
-snake_tail_right = pygame.image.load("snake_tail_right.png")
-snake_tail_left = pygame.image.load("snake_tail_left.png")
-snake_tail_up = pygame.image.load("snake_tail_up.png")
-snake_tail_down = pygame.image.load("snake_tail_down.png")
-snake_turn1 = pygame.image.load("snake_turn_LUDR.png")
-snake_turn2 = pygame.image.load("snake_turn_RUDL.png")
-snake_turn3 = pygame.image.load("snake_turn_ULRD.png")
-snake_turn4 = pygame.image.load("snake_turn_URLD.png")
-apple_image = pygame.image.load("apple.png")
+snake_head_right = pygame.image.load("assets/snake_head_right.png")
+snake_head_left = pygame.image.load("assets/snake_head_left.png")
+snake_head_up = pygame.image.load("assets/snake_head_up.png")
+snake_head_down = pygame.image.load("assets/snake_head_down.png")
+snake_body = pygame.image.load("assets/snake_body.png")
+snake_body_up = pygame.image.load("assets/snake_body_up.png")
+snake_tail_right = pygame.image.load("assets/snake_tail_right.png")
+snake_tail_left = pygame.image.load("assets/snake_tail_left.png")
+snake_tail_up = pygame.image.load("assets/snake_tail_up.png")
+snake_tail_down = pygame.image.load("assets/snake_tail_down.png")
+snake_turn1 = pygame.image.load("assets/snake_turn_LUDR.png")
+snake_turn2 = pygame.image.load("assets/snake_turn_RUDL.png")
+snake_turn3 = pygame.image.load("assets/snake_turn_ULRD.png")
+snake_turn4 = pygame.image.load("assets/snake_turn_URLD.png")
+apple_image = pygame.image.load("assets/apple.png")
 
 
 class Apple:
