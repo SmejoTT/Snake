@@ -11,7 +11,7 @@ grid_size = 30
 grid=[]
 for i in range(0,height,30):
     for j in range(0,width,30):
-        grid.append((j,i))
+        grid.append([j,i])
 
 #Snake
 
@@ -221,9 +221,9 @@ class Apple:
 
     def spawn(self, position):
         game_grid = grid.copy()
-        for x in position:
+        for p in position:
             try:
-                game_grid.remove(x)
+                game_grid.remove(p)
             except ValueError:
                 pass
         self.pos = random.choice(game_grid)
@@ -232,7 +232,7 @@ class Apple:
         screen.blit(apple_image, self.pos)
 
     def eaten(self, head):
-        head_pos = head.x, head.y
+        head_pos = [head.x, head.y]
         if head_pos == self.pos:
             return True
         return False
